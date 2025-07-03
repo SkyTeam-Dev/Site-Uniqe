@@ -1,0 +1,114 @@
+{
+    "sourceFile": "Templates/Default/CSS/Site.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1751546367916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751547434066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,10 @@\n     .menu-colored {\r\n       background-color: var(--bs-primary) !important;\r\n       box-shadow: 0 2px 5px rgba(0,0,0,0.1);\r\n     }\r\n-    \n\\ No newline at end of file\n+    \r\n+\r\n+\r\n+.Hero {\r\n+  height: 100vh;  \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751547515043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,24 @@\n header {\r\n-      position: fixed;\r\n-      width: 100%;\r\n-      z-index: 999;\r\n-      transition: background-color 0.3s ease, box-shadow 0.3s ease;\r\n-    }\r\n+  position: fixed;\r\n+  width: 100%;\r\n+  z-index: 999;\r\n+  transition: background-color 0.3s ease, box-shadow 0.3s ease;\r\n+}\r\n \r\n-    .menu-transparent {\r\n-      background-color: transparent !important;\r\n-      box-shadow: none !important;\r\n-    }\r\n+.menu-transparent {\r\n+  background-color: transparent !important;\r\n+  box-shadow: none !important;\r\n+}\r\n \r\n-    .menu-colored {\r\n\\ No newline at end of file\n-      background-color: var(--bs-primary) !important;\r\n-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);\r\n-    }\r\n-    \r\n+.menu-colored {\r\n+  background-color: var(--bs-primary) !important;\r\n+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n+}\r\n \r\n-\r\n .Hero {\r\n-  height: 100vh;  \r\n-}\n+  height: 100vh;\r\n+  background-image: url('../Imagens/foto-home-uniqe.jpg');\r\n+  background-repeat: no-repeat;\r\n+  background-size: contain;\r\n+  background-position: center;\r\n+}\r\n"
+                },
+                {
+                    "date": 1751547628552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n .Hero {\r\n   height: 100vh;\r\n   background-image: url('../Imagens/foto-home-uniqe.jpg');\r\n   background-repeat: no-repeat;\r\n-  background-size: contain;\r\n+  background-size: cover;\r\n   background-position: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1751550149096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,13 @@\n+.fade-in {\r\n+    opacity: 0;\r\n+    transition: opacity 1s ease-in-out;\r\n+}\r\n+\r\n+.fade-in.show {\r\n+    opacity: 1;\r\n+}\r\n+\r\n header {\r\n   position: fixed;\r\n   width: 100%;\r\n   z-index: 999;\r\n"
+                },
+                {
+                    "date": 1751550824890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,4 +30,8 @@\n   background-repeat: no-repeat;\r\n   background-size: cover;\r\n   background-position: center;\r\n }\r\n+\r\n+.Espacamento_Site{\r\n+    padding-top: 8rem !important;\r\n+}\r\n"
+                },
+                {
+                    "date": 1751551237161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,7 +31,11 @@\n   background-size: cover;\r\n   background-position: center;\r\n }\r\n \r\n-.Espacamento_Site{\r\n+.Espacamento_Superior{\r\n     padding-top: 8rem !important;\r\n }\r\n+\r\n+.Espacamento_Inferior{\r\n+    padding-bottom: 8rem !important;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751552924266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,5 +37,10 @@\n }\r\n \r\n .Espacamento_Inferior{\r\n     padding-bottom: 8rem !important;\r\n+}\r\n+\r\n+.icon-sit{\r\n+    width: 32px;\r\n+    height: 32px;;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751553910112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,8 @@\n .Espacamento_Inferior{\r\n     padding-bottom: 8rem !important;\r\n }\r\n \r\n-.icon-sit{\r\n+.icon-site{\r\n     width: 32px;\r\n     height: 32px;;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751558377962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,18 @@\n \r\n .icon-site{\r\n     width: 32px;\r\n     height: 32px;;\r\n+}\r\n+\r\n+.card-beneficio .icone,\r\n+.card-beneficio h5 {\r\n+  transition: all 0.3s ease-in-out;\r\n+}\r\n+\r\n+.card-beneficio:hover .icone {\r\n+  transform: scale(1.3);\r\n+}\r\n+\r\n+.card-beneficio:hover h5 {\r\n+  color: #0d6efd; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751558423653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n   transform: scale(1.3);\r\n }\r\n \r\n .card-beneficio:hover h5 {\r\n-  color: #0d6efd; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+  color: var(--bs-secondary); /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751558472258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n   transform: scale(1.3);\r\n }\r\n \r\n .card-beneficio:hover h5 {\r\n-  color: var(--bs-secondary); /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+  color: ##53535a; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751558491692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,6 +54,6 @@\n   transform: scale(1.3);\r\n }\r\n \r\n .card-beneficio:hover h5 {\r\n-  color: ##53535a; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+  color: #53535a; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751558546406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,10 @@\n }\r\n \r\n .icon-site{\r\n     width: 32px;\r\n-    height: 32px;;\r\n+    height: 32px;\r\n+    background-color: var(--primary)\r\n }\r\n \r\n .card-beneficio .icone,\r\n .card-beneficio h5 {\r\n"
+                },
+                {
+                    "date": 1751558571804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n .icon-site{\r\n     width: 32px;\r\n     height: 32px;\r\n-    background-color: var(--primary)\r\n+    background-color: var(--primary);\r\n }\r\n \r\n .card-beneficio .icone,\r\n .card-beneficio h5 {\r\n@@ -52,8 +52,9 @@\n }\r\n \r\n .card-beneficio:hover .icone {\r\n   transform: scale(1.3);\r\n+  background-color: #53535a;\r\n }\r\n \r\n .card-beneficio:hover h5 {\r\n   color: #53535a; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n"
+                },
+                {
+                    "date": 1751558670014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,12 @@\n \r\n .icon-site{\r\n     width: 32px;\r\n     height: 32px;\r\n+    \r\n+}\r\n+\r\n+.icone{\r\n     background-color: var(--primary);\r\n }\r\n \r\n .card-beneficio .icone,\r\n"
+                },
+                {
+                    "date": 1751558704033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     \r\n }\r\n \r\n .icone{\r\n-    background-color: var(--primary);\r\n+    background-color: var(--bs-primary);\r\n }\r\n \r\n .card-beneficio .icone,\r\n .card-beneficio h5 {\r\n"
+                },
+                {
+                    "date": 1751558985344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,13 +39,8 @@\n .Espacamento_Inferior{\r\n     padding-bottom: 8rem !important;\r\n }\r\n \r\n-.icon-site{\r\n-    width: 32px;\r\n-    height: 32px;\r\n-    \r\n-}\r\n \r\n .icone{\r\n     background-color: var(--bs-primary);\r\n }\r\n@@ -56,10 +51,10 @@\n }\r\n \r\n .card-beneficio:hover .icone {\r\n   transform: scale(1.3);\r\n-  background-color: #53535a;\r\n+  background-color: #73737d;\r\n }\r\n \r\n .card-beneficio:hover h5 {\r\n-  color: #53535a; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+  color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751559188686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,5 +56,10 @@\n }\r\n \r\n .card-beneficio:hover h5 {\r\n   color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+}\r\n+\r\n+.img-hover-site:hover{\r\n+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);\r\n+    transform: scale(1.3);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751559232827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,6 +60,10 @@\n }\r\n \r\n .img-hover-site:hover{\r\n     box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);\r\n-    transform: scale(1.3);\r\n+    transform: scale(1.1);\r\n+    -webkit-transform: scale(1.1);\r\n+    -moz-transform: scale(1.1);\r\n+    -ms-transform: scale(1.1);\r\n+    -o-transform: scale(1.1);\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751559247880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n }\r\n \r\n .img-hover-site:hover{\r\n     box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);\r\n+    transition: all 0.3s ease-in-out;\r\n     transform: scale(1.1);\r\n     -webkit-transform: scale(1.1);\r\n     -moz-transform: scale(1.1);\r\n     -ms-transform: scale(1.1);\r\n"
+                },
+                {
+                    "date": 1751568290528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,12 +59,16 @@\n   color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n }\r\n \r\n .img-hover-site:hover{\r\n-    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);\r\n+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);\r\n     transition: all 0.3s ease-in-out;\r\n     transform: scale(1.1);\r\n     -webkit-transform: scale(1.1);\r\n     -moz-transform: scale(1.1);\r\n     -ms-transform: scale(1.1);\r\n     -o-transform: scale(1.1);\r\n+    -webkit-transition: all 0.3s ease-in-out;\r\n+    -moz-transition: all 0.3s ease-in-out;\r\n+    -ms-transition: all 0.3s ease-in-out;\r\n+    -o-transition: all 0.3s ease-in-out;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751569817613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n+body{\r\n+    overflow-x: hidden;\r\n+\r\n+}\r\n+\r\n .fade-in {\r\n     opacity: 0;\r\n     transition: opacity 1s ease-in-out;\r\n }\r\n"
+                },
+                {
+                    "date": 1751570243793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,83 @@\n+body{\r\n+    overflow-x: hidden;\r\n+\r\n+}\r\n+\r\n+.fade-in {\r\n+    opacity: 0;\r\n+    transition: opacity 1s ease-in-out;\r\n+}\r\n+\r\n+.fade-in.show {\r\n+    opacity: 1;\r\n+}\r\n+\r\n+header {\r\n+  position: fixed;\r\n+  width: 100%;\r\n+  z-index: 999;\r\n+  transition: background-color 0.3s ease, box-shadow 0.3s ease;\r\n+}\r\n+\r\n+.menu-transparent {\r\n+  background-color: transparent !important;\r\n+  box-shadow: none !important;\r\n+}\r\n+\r\n+.menu-colored {\r\n+  background-color: var(--bs-primary) !important;\r\n+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n+}\r\n+\r\n+.Hero {\r\n+  height: 100vh;\r\n+  background-image: url('../Imagens/foto-home-uniqe.jpg');\r\n+  background-repeat: no-repeat;\r\n+  background-size: cover;\r\n+  background-position: center;\r\n+}\r\n+\r\n+.Espacamento_Superior{\r\n+    padding-top: 8rem !important;\r\n+}\r\n+\r\n+.Espacamento_Inferior{\r\n+    padding-bottom: 8rem !important;\r\n+}\r\n+\r\n+\r\n+.icone{\r\n+    background-color: var(--bs-primary);\r\n+}\r\n+\r\n+.card-beneficio .icone,\r\n+.card-beneficio h5 {\r\n+  transition: all 0.3s ease-in-out;\r\n+}\r\n+\r\n+.card-beneficio:hover .icone {\r\n+  transform: scale(1.3);\r\n+  background-color: #73737d;\r\n+}\r\n+\r\n+.card-beneficio:hover h5 {\r\n+  color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n+}\r\n+\r\n+.img-hover-site:hover{\r\n+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);\r\n+    transition: all 0.3s ease-in-out;\r\n+    transform: scale(1.1);\r\n+    -webkit-transform: scale(1.1);\r\n+    -moz-transform: scale(1.1);\r\n+    -ms-transform: scale(1.1);\r\n+    -o-transform: scale(1.1);\r\n+    -webkit-transition: all 0.3s ease-in-out;\r\n+    -moz-transition: all 0.3s ease-in-out;\r\n+    -ms-transition: all 0.3s ease-in-out;\r\n+    -o-transition: all 0.3s ease-in-out;\r\n+}\r\n+\r\n+.object-fit-cover {\r\n+  object-fit: cover;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751574704481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,84 +79,13 @@\n }\r\n \r\n .object-fit-cover {\r\n   object-fit: cover;\r\n-}\n-body{\r\n-    overflow-x: hidden;\r\n-\r\n }\r\n \r\n-.fade-in {\r\n-    opacity: 0;\r\n-    transition: opacity 1s ease-in-out;\r\n-}\r\n \r\n-.fade-in.show {\r\n-    opacity: 1;\r\n-}\r\n-\r\n-header {\r\n-  position: fixed;\r\n-  width: 100%;\r\n-  z-index: 999;\r\n-  transition: background-color 0.3s ease, box-shadow 0.3s ease;\r\n-}\r\n-\r\n-.menu-transparent {\r\n-  background-color: transparent !important;\r\n-  box-shadow: none !important;\r\n-}\r\n-\r\n-.menu-colored {\r\n-  background-color: var(--bs-primary) !important;\r\n-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\r\n-}\r\n-\r\n-.Hero {\r\n-  height: 100vh;\r\n-  background-image: url('../Imagens/foto-home-uniqe.jpg');\r\n-  background-repeat: no-repeat;\r\n-  background-size: cover;\r\n-  background-position: center;\r\n-}\r\n-\r\n-.Espacamento_Superior{\r\n-    padding-top: 8rem !important;\r\n-}\r\n-\r\n-.Espacamento_Inferior{\r\n-    padding-bottom: 8rem !important;\r\n-}\r\n-\r\n-\r\n-.icone{\r\n-    background-color: var(--bs-primary);\r\n-}\r\n-\r\n-.card-beneficio .icone,\r\n-.card-beneficio h5 {\r\n-  transition: all 0.3s ease-in-out;\r\n-}\r\n-\r\n-.card-beneficio:hover .icone {\r\n-  transform: scale(1.3);\r\n-  background-color: #73737d;\r\n-}\r\n-\r\n-.card-beneficio:hover h5 {\r\n-  color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */\r\n-}\r\n-\r\n-.img-hover-site:hover{\r\n-    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);\r\n-    transition: all 0.3s ease-in-out;\r\n-    transform: scale(1.1);\r\n-    -webkit-transform: scale(1.1);\r\n-    -moz-transform: scale(1.1);\r\n-    -ms-transform: scale(1.1);\r\n-    -o-transform: scale(1.1);\r\n-    -webkit-transition: all 0.3s ease-in-out;\r\n-    -moz-transition: all 0.3s ease-in-out;\r\n-    -ms-transition: all 0.3s ease-in-out;\r\n-    -o-transition: all 0.3s ease-in-out;\r\n+.modal.fade .modal-dialog {\r\n+  -webkit-transition: -webkit-transform 0.3s ease-out;\r\n+     -moz-transition: -moz-transform 0.3s ease-out;\r\n+       -o-transition: -o-transform 0.3s ease-out;\r\n+          transition: transform 0.3s ease-out;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1751546367916,
+            "name": "Commit-0",
+            "content": "header {\r\n      position: fixed;\r\n      width: 100%;\r\n      z-index: 999;\r\n      transition: background-color 0.3s ease, box-shadow 0.3s ease;\r\n    }\r\n\r\n    .menu-transparent {\r\n      background-color: transparent !important;\r\n      box-shadow: none !important;\r\n    }\r\n\r\n    .menu-colored {\r\n      background-color: var(--bs-primary) !important;\r\n      box-shadow: 0 2px 5px rgba(0,0,0,0.1);\r\n    }\r\n    "
+        }
+    ]
+}

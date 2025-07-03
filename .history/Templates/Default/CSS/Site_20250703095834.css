@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.menu-colored {
+  background-color: var(--bs-primary) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Hero {
+  height: 100vh;
+  background-image: url('../Imagens/foto-home-uniqe.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

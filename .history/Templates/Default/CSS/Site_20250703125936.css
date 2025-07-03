@@ -1,0 +1,59 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.menu-colored {
+  background-color: var(--bs-primary) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Hero {
+  height: 100vh;
+  background-image: url('../Imagens/foto-home-uniqe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Espacamento_Superior{
+    padding-top: 8rem !important;
+}
+
+.Espacamento_Inferior{
+    padding-bottom: 8rem !important;
+}
+
+.icon-site{
+    width: 32px;
+    height: 32px;;
+}
+
+.card-beneficio .icone,
+.card-beneficio h5 {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-beneficio:hover .icone {
+  transform: scale(1.3);
+}
+
+.card-beneficio:hover h5 {
+  color: #0d6efd; /* cor primária do Bootstrap (pode mudar para outra que quiser) */
+}
