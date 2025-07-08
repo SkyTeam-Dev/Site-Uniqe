@@ -1,0 +1,160 @@
+/* ===== Scrollbar ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--bs-secondary) var(--bs-gray-600);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--bs-gray-600);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--bs-secondary);
+    border-radius: 12px;
+    border: 12px solid var(--bs-gray-600);
+  }
+
+  html, body {
+    overflow-x: hidden;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  position: fixed; /* Impede scroll até em alguns edge cases */
+  width: 100%;     /* Evita "pulo" de largura no scroll lock */
+}
+
+.modal input {
+  will-change: transform;
+}
+
+.modal label, .modal input {
+  position: relative;
+  z-index: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+}
+
+.text-p{
+  font-size: 1rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.menu-colored {
+  background-color: var(--bs-primary) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Hero {
+  height: 100vh;
+  background-image: url('../Imagens/foto-home-uniqe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Espacamento_Superior{
+    padding-top: 8rem !important;
+}
+
+.Espacamento_Inferior{
+    padding-bottom: 8rem !important;
+}
+
+
+.icone{
+    background-color: var(--bs-primary);
+}
+
+.card-beneficio .icone,
+.card-beneficio h5 {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-beneficio:hover .icone {
+  transform: scale(1.3);
+  background-color: #73737d;
+}
+
+.card-beneficio:hover h5 {
+  color: #73737d; /* cor primária do Bootstrap (pode mudar para outra que quiser) */
+}
+
+.img-hover-site:hover{
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
+}
+
+.btn-social {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+    }
+
+
+  option {
+    font-family: var(--bs-font-sans-serif);
+    font-size: medium;
+    padding: 2px !important;
+    min-height: 1.4em !important;  
+}
+
+select option:nth-child(2n+1), option:nth-child(2n+1) {
+    /* a lista de opções do select será zebrada */
+    background-color: var(--bs-gray-200) !important;
+}
+
+select option:hover, option:hover, select option:focus, option:focus{
+    /* a lista de opções do select será zebrada */
+    background-color: var(--bs-primary) !important;
+    color: var(--bs-white) !important;
+}
